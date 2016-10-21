@@ -2,14 +2,14 @@ from cyberpythonevaluator import CyberPythonEvaluator
 
 cpe = CyberPythonEvaluator()
 
-challenge = cpe.get_challenge(0)
+challenge = cpe.get_challenge(1)
 
 print "Description", challenge.description
-print "Example Input", challenge.example_input
-print "Example Output", challenge.example_output
+#print "Example Input", challenge.example_input
+#print "Example Output", challenge.example_output
 
-def solution (input_string) :
-    return input_string
+def solution (x,y) :
+    return x + y
 
 #print challenge.validate(solution, debug=True)
-print challenge.validate(solution, debug=True)
+print challenge.validate(solution, debug=False)
